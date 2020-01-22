@@ -25,6 +25,18 @@
     .body {
       overflow: scroll;
     }
+
+    body:before {
+      position: absolute;
+      top: 0; left: 0;
+      bottom: 0; right: 0;
+      content: '';
+      background-image: url('img/eden.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      overflow: scroll;
+    }
   </style>
 </head>
 </style>
@@ -32,7 +44,7 @@
 
 <!-- Body -->
 
-<body style="background-image: url('img/eden.jpg'); background-repeat: no-repeat; background-size: cover; overflow: scroll; background-attachment: fixed;">
+<body>
   <!-- Navbar -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar" style="background-color: #ffffff;">
     <div class="container">
